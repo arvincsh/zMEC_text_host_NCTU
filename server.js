@@ -8,11 +8,11 @@ const child_process = require('child_process');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/page"));
-app.listen("4001",function () {
-    console.log("4001端�~O��~\~M�~J��~P��~J���~Z")
+app.listen("5001",function () {
+    console.log("5001端�~O��~\~M�~J��~P��~J���~Z")
 });
 //�~K��~H�请��~B
-app.post("/image",function (req,res) {
+app.post("/NCTUimage",function (req,res) {
     var form = new formidable.IncomingForm();
     var returnData = "";
     //form.encoding = 'utf-8';
