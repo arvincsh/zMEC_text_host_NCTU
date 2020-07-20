@@ -8,8 +8,8 @@ const child_process = require('child_process');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/page"));
-app.listen("5001",function () {
-    console.log("5001端�~O��~\~M�~J��~P��~J���~Z")
+app.listen("4001",function () {
+    console.log("4001 is running")
 });
 //�~K��~H�请��~B
 app.post("/NCTUimage",function (req,res) {
