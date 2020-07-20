@@ -25,4 +25,6 @@ RUN npm install express && npm install formidable
 
 RUN mkdir page && cd page && mkdir upload && cd ..
 
-CMD [ "node", "/home/work/zMEC_text_host_NCTU/server.js" ]
+RUN npm install forever -g
+
+CMD [ "forever", "server.js" ]
